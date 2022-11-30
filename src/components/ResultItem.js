@@ -57,45 +57,11 @@ export default function ResultItem(props) {
         instructors.push("N/A")
     }
 
-    // const [seen, setSeen] = useState(props.bar_color)
-    // const [focused, setFocus] = useState(false)
-    // let navigate = useNavigate();
-    
-    // useEffect(() => {
-    //     const data = window.localStorage.getItem('Carta_Application');
-    //     if (data !== null) setSeen(JSON.parse(data))
-    // }, [])
-
-    // useEffect(() => {
-    //     window.localStorage.setItem(`Carta_Application${props.item.id}`, JSON.stringify(seen))
-    //     console.log("hey")
-    // }, [seen]
-    // )
-
-    // function wrapperFunction() {
-    //     // navigate("/details", {state: props});
-    //     setFocus(true)
-    //     setSeen(true);
-    // }
-
-    // {() => wrapperFunction()}
-    // console.log(props.bar_color)
-    
-    // onClick = {() => props.seen(props.id)} style = {{border: `${seen ? "0px" : "2px"}`}}
-
-
-    // return (
-    //     <div className = "result--container" onClick = {() => {
-    //         props.seen(props.id)
-    //         props.setFocus(props.item)
-    //     }}>
-
     let current_focus_id = "none"
     if (props.current_focus != "none") {
         current_focus_id = props.current_focus.id
     }
 
-    console.log(props.current_focus == props.item)
     return (
         <div className = {`result--container--${current_focus_id === props.item.id ? "focused" : "unfocused"}`} onClick = {() => {
             props.seen(props.id)

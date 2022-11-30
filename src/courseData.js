@@ -5,12 +5,8 @@ import React from 'react';
         const data = await result.json()
         for (let i = 0; i < data.length; i++) {
             data[i].bar_seen = false
-            // console.log(data[i])
         }
-        // console.log(data)
         setData(data)
     }
-
-    // courseData = getData()
 
     export default getData

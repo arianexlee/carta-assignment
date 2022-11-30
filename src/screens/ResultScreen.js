@@ -23,7 +23,6 @@ export default function ResultScreen() {
     }
 
     const list = data ? data.map(item => {
-        console.log(focusedClass)
         return (
             <ResultItem 
             key= {item.id}

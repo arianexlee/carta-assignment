@@ -6,8 +6,6 @@ import InstructorItem from './InstructorItem'
 
 export default function DetailItem(props) {
 
-    console.log("Detail", props)
-
     const ratings = props.current_focus.ratings
 
     const instructor_totals = new Object()

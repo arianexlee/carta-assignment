@@ -36,10 +36,8 @@
 }
 
 .overall--result--container {
-    /* width: 100%; */
     padding: 0px;
     margin: 0px; 
-    /* background-color: blue; */
 }
 
 .num--results--container {
@@ -55,7 +53,6 @@
 
 .center--main--container{
     display: flex;
-    /* flex-direction: column; */
     width: 100%;
     background-color: pink;
     justify-content: center;
@@ -67,22 +64,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: yellow; */
-}
-
-.result--container {
-    width: 645px;
-    border-radius: 8px;
-    background-color: white;
-    display: flex; 
-    flex-direction: row;
-    padding: 0px;
-    box-shadow: 3px 3px 3px #BCBCBC;
-    margin-bottom: 24px; 
-    margin-right: 28px; 
-    /* border: 2px solid #005EEA; */
-    overflow: hidden;
-
 }
 
 .result--container--focused {
@@ -507,7 +488,6 @@
 .ind--num--ratings--container {
     padding: 0px;
     margin:0px;
-    /* margin-left: 4px; */
 }
 
 .ind--num--rating--text{
@@ -521,6 +501,5 @@
 .details--course--allstats--container {
     display: flex;
     flex-direction: column;
-    /* width: 236px;  */
     justify-content: space-between;
 }

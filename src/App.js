@@ -8,6 +8,5 @@ export default function App() {
 
     return <Routes>
         <Route path= "/" element= {<ResultScreen/>}/>
-        {/* <Route path= "/details" element= {<DetailsScreen/>}/> */}
     </Routes>
 }
