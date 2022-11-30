@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin:0px; 
+    padding: 0px; 
+}
+
+.all {
+    margin: 0px;
+    padding: 0px; 
+    width: 100%; 
+}
+
+.header {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color: #E94848;
+}
+
+.body {
+    font-family: "Open Sans";
+    margin: 0;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F3F3;
+}
+
+.overall--result--container {
+    /* width: 100%; */
+    padding: 0px;
+    margin: 0px; 
+    /* background-color: blue; */
+}
+
+.num--results--container {
+    /* width: 100%; */
+}
+
+.num--results--text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #565656;
+    margin-bottom: 16px;
+}
+
+.center--main--container{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    background-color: pink;
+    justify-content: center;
+
+}
+
+.hug--main--container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: yellow; */
+}
+
+.result--container {
+    width: 645px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex; 
+    flex-direction: row;
+    padding: 0px;
+    box-shadow: 3px 3px 3px #BCBCBC;
+    margin-bottom: 24px; 
+    margin-right: 28px; 
+    /* border: 2px solid #005EEA; */
+    overflow: hidden;
+
+}
+
+.result--container--focused {
+    width: 645px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex; 
+    flex-direction: row;
+    padding: 0px;
+    box-shadow: 3px 3px 3px #BCBCBC;
+    margin-bottom: 24px; 
+    margin-right: 28px; 
+    border: 2px solid #005EEA;
+    overflow: hidden;
+
+}
+
+.result--container--unfocused {
+    width: 645px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex; 
+    flex-direction: row;
+    padding: 0px;
+    box-shadow: 3px 3px 3px #BCBCBC;
+    margin-bottom: 24px; 
+    margin-right: 28px; 
+    overflow: hidden;
+}
+
+.seen--bar--true {
+    width: 16px;
+    background-color: #ECA4A4;
+    margin: 0px;
+}
+
+.seen--bar--false {
+    width: 16px;
+    background-color: #E94848;
+    margin: 0px;
+
+}
+
+.course--container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.course--title {
+    font-family: "Roboto";
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.genreq--container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.genreq {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #E94848;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+}
+
+.no-genreq {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: white;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #999999;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+}
+
+.course--info--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course--desc-container {
+    width: 294px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.course--desc--text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+    color: #565656
+}
+
+.course--allstats--container {
+    display: flex;
+    flex-direction: column;
+    width: 263px; 
+    justify-content: space-between;
+}
+
+.course--stat--container {
+    display: flex;
+    flex-direction: row;
+    margin: 0px; 
+    padding: 0px;
+}
+
+.course--stat--title {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    margin-right: 4px; 
+    padding: 0px;
+}
+
+.course--stat--text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    margin: 0px; 
+    padding: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    color: #565656
+}
+
+.course--stat--pill--container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.course--stat--pill-none {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #999999;
+    border-radius: 5px;
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.course--stat--pill-aut {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #8D4400;
+    border-radius: 5px;
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.course--stat--pill-win {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #0048B5;
+    border-radius: 5px;
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.course--stat--pill-spr {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #9700AF;
+    border-radius: 5px;
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.course--stat--pill-sum {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #175E05;
+    border-radius: 5px;
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.details--container {
+    background-color: white;
+    width: 650px;
+    min-height: 100vh;
+    padding: 32px;
+    padding-right: 48px;
+    padding-left: 48px;
+    margin: 0px;
+    box-shadow: -3px 3px 3px #BCBCBC, 3px 3px 3px #BCBCBC;
+    border-radius: 8px;
+    position: -webkit-sticky;
+}
+
+.details--course--container {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 32px; 
+}
+
+.details--course--title {
+    font-family: "Roboto";
+    font-size: 32px;
+}
+
+.details--course--desc-container {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.details--instr--evals--container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.details--instr--evals--title {
+    font-family: "Roboto";
+    font-size: 24px;
+    margin: 0px;
+    margin-bottom: 16px;
+    padding: 0px; 
+}
+
+.instr--container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-bottom: 24px;
+}
+
+.instr--name--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.instr--name {
+    font-family: "Open Sans";
+    font-size: 16px;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.overall--ratings--container {
+    display: flex;
+    flex-direction: row;
+}
+
+.overall--rating--pill-4 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #149100;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+    max-height: 20px;
+}
+
+.overall--rating--pill-3 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #B7A400;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+    max-height: 20px;
+}
+
+.overall--rating--pill-2 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #CB6100;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+    max-height: 20px;
+}
+
+.overall--rating--pill-1 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #9F0000;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+    max-height: 20px;
+}
+
+.overall--rating--pill-0 {
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #4A0000;
+    border-radius: 5px;
+    margin: 0px;
+    margin-right: 8px;
+    max-height: 20px;
+}
+
+.overall--num--ratings--text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    color: #565656
+}
+
+.ratings--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ind--rating--container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.ind--rating--term--container{
+    padding: 0px;
+    margin:0px;
+    margin-right: 8px;
+}
+
+.ind--term--text {
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    color: #565656
+}
+
+.ind--num--ratings--container {
+    padding: 0px;
+    margin:0px;
+    /* margin-left: 4px; */
+}
+
+.ind--num--rating--text{
+    font-family: "Open Sans";
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    color: #565656
+}
+
+.details--course--allstats--container {
+    display: flex;
+    flex-direction: column;
+    /* width: 236px;  */
+    justify-content: space-between;
+}
